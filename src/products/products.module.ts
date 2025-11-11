@@ -13,7 +13,7 @@ import { Product, ProductImage } from './entities';
   providers: [ProductsService],
   imports: [
     TypeOrmModule.forFeature([ Product, ProductImage ]),
-    AuthModule,
+    AuthModule, 
   ],
   exports: [
     ProductsService,
