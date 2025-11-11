@@ -1,5 +1,5 @@
-import { fileNamer } from './fileNamer.helper';
-import { fileFilter } from './fileFilter.helper';
+import { fileNamer } from '../../../src/files/helpers/fileNamer.helper';
+import { fileFilter } from '../../../src/files/helpers/fileFilter.helper';
 
 describe('file helpers', () => {
   describe('fileNamer', () => {

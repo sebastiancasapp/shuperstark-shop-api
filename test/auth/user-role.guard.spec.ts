@@ -1,4 +1,4 @@
-import { UserRoleGuard } from './guards/user-role.guard';
+import { UserRoleGuard } from '../../src/auth/guards/user-role.guard';
 import { Reflector } from '@nestjs/core';
 import { ExecutionContext } from '@nestjs/common';
 

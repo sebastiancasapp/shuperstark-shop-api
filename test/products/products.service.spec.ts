@@ -1,9 +1,9 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { getRepositoryToken } from '@nestjs/typeorm';
 import { DataSource, Repository } from 'typeorm';
-import { ProductsService } from './products.service';
-import { Product } from './entities/product.entity';
-import { ProductImage } from './entities/product-image.entity';
+import { ProductsService } from '../../src/products/products.service';
+import { Product } from '../../src/products/entities/product.entity';
+import { ProductImage } from '../../src/products/entities/product-image.entity';
 import { NotFoundException } from '@nestjs/common';
 import { v4 as uuid } from 'uuid';
 

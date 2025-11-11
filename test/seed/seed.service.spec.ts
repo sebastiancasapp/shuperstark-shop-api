@@ -1,10 +1,10 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { getRepositoryToken } from '@nestjs/typeorm';
 
-import { SeedService } from './seed.service';
-import { ProductsService } from './../products/products.service';
-import { User } from '../auth/entities/user.entity';
-import { initialData } from './data/seed-data';
+import { SeedService } from '../../src/seed/seed.service';
+import { ProductsService } from '../../src/products/products.service';
+import { User } from '../../src/auth/entities/user.entity';
+import { initialData } from '../../src/seed/data/seed-data';
 
 describe('SeedService', () => {
   let service: SeedService;

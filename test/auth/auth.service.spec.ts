@@ -4,9 +4,9 @@ import { JwtService } from '@nestjs/jwt';
 import { Repository } from 'typeorm';
 import * as bcrypt from 'bcrypt';
 
-import { AuthService } from './auth.service';
-import { User } from './entities/user.entity';
-import { CreateUserDto, LoginUserDto } from './dto';
+import { AuthService } from '../../src/auth/auth.service';
+import { User } from '../../src/auth/entities/user.entity';
+import { CreateUserDto, LoginUserDto } from '../../src/auth/dto';
 import { UnauthorizedException } from '@nestjs/common';
 
 describe('AuthService', () => {

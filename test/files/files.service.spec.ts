@@ -1,4 +1,4 @@
-import { FilesService } from './files.service';
+import { FilesService } from '../../src/files/files.service';
 import * as fs from 'fs';
 import { BadRequestException } from '@nestjs/common';
 
