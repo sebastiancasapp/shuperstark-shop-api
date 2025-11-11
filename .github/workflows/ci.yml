@@ -21,7 +21,7 @@ jobs:
         run: npm install  --legacy-peer-deps
 
       - name: Build Docker image
-        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/sebastiandzr/superstartk-api .
+        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/superstartk-api .
 
       - name: Login to Docker Hub
         run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
