@@ -25,7 +25,7 @@ async function bootstrap() {
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('api', app, document);
 
-
+  console.log('Connecting to:', process.env.DB_HOST, process.env.DB_PORT);
   await app.listen(process.env.PORT);
   logger.log(`App running on port ${ process.env.PORT }`);
 }
